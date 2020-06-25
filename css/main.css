@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.central.sideview {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    position: fixed;
+    background-color:green;
+    z-index: -10;
+    position: absolute;
+    margin:0;
+    border: 0;
+}
+
+.central.sideview:after{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+
+.sideview {
+  width: 200px;
+  height: 150px;
+  float: left;
+  display: block;
+  top: 0;
+  margin: 20px;
+  border: 2px solid #fff;
+  transition: 1s border;
+  position: relative;
+}
+
+.sideview:after{
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 3px;
+  right: 3px;
+  background-image: url('../imgs/expand.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.sideview:hover {
+  cursor: pointer;
+  border: green 2px solid;
+}
+
+/*#one {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 200px;
+  height: 150px;
+  background-color: lime;
+  z-index: 2;
+}
+
+#two {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 30px;
+  width: 200px;
+  height: 150px;
+  background-color: purple;
+  z-index: 2;
+}
+
+#three {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  width: 200px;
+  height: 150px;
+  background-color: pink;
+  z-index: 2;
+  display: block;   
+}*/
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  
+}
